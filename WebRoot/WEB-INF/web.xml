@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>RegistServlet</servlet-name>
+    <servlet-class>user.web.RegistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistUIServlet</servlet-name>
+    <servlet-class>user.web.RegistUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActiveServlet</servlet-name>
+    <servlet-class>user.web.ActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginUIServlet</servlet-name>
+    <servlet-class>user.web.LoginUIServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>user.web.LoginServlet</servlet-class>
+    <init-param>
+    	<param-name>adminAccount</param-name>
+    	<param-value>admin</param-value>
+    	
+    </init-param>
+    <init-param>
+    	<param-name>adminPassword</param-name>
+    	<param-value>12345</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>user.web.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowTicketServlet</servlet-name>
+    <servlet-class>ticket.web.ShowTicketServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangePageServlet</servlet-name>
+    <servlet-class>ticket.web.ChangePageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectTicketServlet</servlet-name>
+    <servlet-class>ticket.web.SelectTicketServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartAddServlet</servlet-name>
+    <servlet-class>cart.web.CartAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartClearServlet</servlet-name>
+    <servlet-class>cart.web.CartClearServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartDeleteServlet</servlet-name>
+    <servlet-class>cart.web.CartDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BuyTicketServlet</servlet-name>
+    <servlet-class>cart.web.BuyTicketServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>showCartServlet</servlet-name>
+    <servlet-class>cart.web.showCartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <servlet-class>order.web.AddOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowOrderServlet</servlet-name>
+    <servlet-class>order.web.ShowOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PayServlet</servlet-name>
+    <servlet-class>order.web.PayServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RefundServlet</servlet-name>
+    <servlet-class>order.web.RefundServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CancelOrderServlet</servlet-name>
+    <servlet-class>order.web.CancelOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckPictureServlet</servlet-name>
+    <servlet-class>user.web.CheckPictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>admin.web.IndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderSystem</servlet-name>
+    <servlet-class>admin.web.OrderSystem</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ModServlet</servlet-name>
+    <servlet-class>ModServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindAllOrder</servlet-name>
+    <servlet-class>admin.web.FindAllOrder</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>giveTicketServlet</servlet-name>
+    <servlet-class>admin.web.giveTicketServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectOrderServlet</servlet-name>
+    <servlet-class>admin.web.SelectOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>admin.web.Logout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowAllUser</servlet-name>
+    <servlet-class>admin.web.ShowAllUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DefriendServlet</servlet-name>
+    <servlet-class>admin.web.DefriendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminTicket</servlet-name>
+    <servlet-class>admin.web.AdminTicket</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditorTicketServlet</servlet-name>
+    <servlet-class>admin.web.EditorTicketServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeTicketNumServlet</servlet-name>
+    <servlet-class>admin.web.ChangeTicketNumServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>RegistServlet</servlet-name>
+    <url-pattern>/servlet/RegistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistUIServlet</servlet-name>
+    <url-pattern>/servlet/RegistUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActiveServlet</servlet-name>
+    <url-pattern>/servlet/ActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginUIServlet</servlet-name>
+    <url-pattern>/servlet/LoginUIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/servlet/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowTicketServlet</servlet-name>
+    <url-pattern>/servlet/ShowTicketServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePageServlet</servlet-name>
+    <url-pattern>/servlet/ChangePageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectTicketServlet</servlet-name>
+    <url-pattern>/servlet/SelectTicketServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartAddServlet</servlet-name>
+    <url-pattern>/servlet/CartAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartClearServlet</servlet-name>
+    <url-pattern>/servlet/CartClearServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartDeleteServlet</servlet-name>
+    <url-pattern>/servlet/CartDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyTicketServlet</servlet-name>
+    <url-pattern>/servlet/BuyTicketServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showCartServlet</servlet-name>
+    <url-pattern>/servlet/showCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddOrderServlet</servlet-name>
+    <url-pattern>/servlet/AddOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowOrderServlet</servlet-name>
+    <url-pattern>/servlet/ShowOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PayServlet</servlet-name>
+    <url-pattern>/servlet/PayServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RefundServlet</servlet-name>
+    <url-pattern>/servlet/RefundServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CancelOrderServlet</servlet-name>
+    <url-pattern>/servlet/CancelOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckPictureServlet</servlet-name>
+    <url-pattern>/servlet/CheckPictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/admin/IndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSystem</servlet-name>
+    <url-pattern>/admin/OrderSystem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModServlet</servlet-name>
+    <url-pattern>/servlet/ModServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllOrder</servlet-name>
+    <url-pattern>/admin/FindAllOrder</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>giveTicketServlet</servlet-name>
+    <url-pattern>/admin/giveTicketServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectOrderServlet</servlet-name>
+    <url-pattern>/admin/SelectOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/admin/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowAllUser</servlet-name>
+    <url-pattern>/admin/ShowAllUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DefriendServlet</servlet-name>
+    <url-pattern>/admin/DefriendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminTicket</servlet-name>
+    <url-pattern>/admin/AdminTicket</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditorTicketServlet</servlet-name>
+    <url-pattern>/admin/EditorTicketServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeTicketNumServlet</servlet-name>
+    <url-pattern>/admin/ChangeTicketNumServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<filter-class>utils.filter.CharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>charset</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter>
+  	<filter-name>CheckUserFilter</filter-name>
+  	<filter-class>utils.filter.CheckUserFilter</filter-class>
+  	<init-param>
+  		<param-name>charset</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>CharacterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>CheckUserFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+</web-app>
